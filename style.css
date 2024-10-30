@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f0ef;
+}
+.destaque {
+    text-align: center;
+}
+
+.destaque h1 span{
+    color: rgb(228, 80, 22);
+}
+
+.destaque h1 {
+    font-weight: 600;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vh;
+}
+
+.card { 
+    flex: 1 1 33%; 
+    background-color: antiquewhite;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1% 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1% 100%; 
+    }
+}
+
+.btn {
+    border: solid 2px #e45016 !important;
+    color: #e45016 !important;
+}
+
+.btn:hover {
+    background-color: #e45016 !important;
+    color: #ffffff !important;
+}
+
+
+#market {
+    height: 50px;
+    width: 50px;
+    background-color: #e45016;
+    color: white;
+    position: fixed;  
+    bottom: 20px;     
+    right: 20px;      
+    display: flex;    
+    justify-content: center; 
+    align-items: center;     
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
